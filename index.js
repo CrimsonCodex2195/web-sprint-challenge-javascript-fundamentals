@@ -16,7 +16,9 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+/*
+Functions can reach as far up as possible, but cannot reach what is in a scope lower than they are. The nestedFunction was defined in the scope of the function myFunction. As a result, it is able to reach the internal varaible that was defined in the scope above it.
+*/
 
 
 
