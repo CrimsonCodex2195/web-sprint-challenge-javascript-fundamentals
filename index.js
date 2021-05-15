@@ -137,7 +137,7 @@ const zooAnimals = [
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
   function greeting(firstName, lastName){
-   return `Hello ${firstName} ${lastName}, nice to meet you!`
+   return `Hello ${firstName} ${lastName}, nice to meet you!`;
   }
   
 
@@ -159,8 +159,10 @@ const zooAnimals = [
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
+function CuboidMaker(length, width, height){
+  this.length = length;
+  this.width = width;
+  this.height = height;
 }
 
 
