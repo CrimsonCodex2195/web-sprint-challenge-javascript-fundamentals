@@ -76,10 +76,9 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(zooAnimalsArray){
-    const lowerCaseNames = zooAnimalsArray.map(element => {
+    return zooAnimalsArray.map(element => {
       return element.animal_name.toLowerCase();
     });
-    return lowerCaseNames;
   }
   
   
@@ -89,10 +88,9 @@ const zooAnimals = [
   */
 
   function lowPopulationAnimals(zooAnimalsArray){
-    const lowPopulationAnimals = zooAnimalsArray.filter(element => {
+    return zooAnimalsArray.filter(element => {
       return element.population < 5;
     }); 
-    return lowPopulationAnimals;
   }
   
 
@@ -102,10 +100,11 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(zooAnimalsArray){
+    return zooAnimalsArray.reduce((accumulator, currentValue) => {
+      return accumulator + currentValue.population}, 0);
   }
-  
+
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
